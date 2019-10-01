@@ -1,0 +1,447 @@
+// ============================================================================
+main_title_slide "Homo Numericus",
+// ============================================================================
+    title page_label
+    subtitle "Petite histoire illustrée de l'homme numérique"
+    stepping
+    picture
+        text_box 0, -400, 1600, 200,
+            style "story"
+            color "white"
+            align 100%
+            font_size 35
+            text "(C) 2019 Christophe de Dinechin"
+
+        at_step 1
+        translate 210, 120, -200
+        rotate_z -4
+        image 0, 0, 470%, 470%, "T-Shirt-Evolution.png"
+
+
+disabled
+  base_slide "Plan de l'exposé",
+    title page_label
+    subtitle "Couvrir tout ce qui est important sans oublier tout ce qui ne l'est pas"
+    stepping
+    picture
+        at_step 3
+        image 0, 0, 50%, 50%, "Plan 3.png"
+    picture
+        at_step 2
+        image 0, 0, 50%, 50%, "Plan 2.png"
+    picture
+        at_step 1
+        image 0, 0, 50%, 50%, "Plan 1.png"
+
+
+
+milestone "", "Art, Science, Pensée",
+    subtitle    "Comment explorer l'histoire du numérique sans vous endormir?"
+    art         "Jean-Claude Meynard - Autoportrait", "Le numérique dans l'art, c'est encore les fractalistes qui en parlent le mieux"
+    science     "Christophe de Dinechin - Autogribouillis", "Le numérique, c'est encore les informaticiens qui en parlent le mieux"
+    pensee      "Ugo Bellagamba - Autoportrait?", "Penser le numérique? Mais c'est de la science-fiction!"
+
+
+// ============================================================================
+section_slide "La préhistoire",
+// ============================================================================
+    title page_label
+    subtitle "Le numérique quand on n'avait même pas l'électricité"
+    picture
+        texture "Tricot Jacquard.jpg"
+        translate 350, 230, 20
+        rotate_z -2
+        rounded_rectangle 0, 0, texture_width, texture_height, 20
+
+
+milestone "200 avant JC", "L'antiquité grecque classique",
+    subtitle    "Les grecs ont tout inventé, mais ça s'est perdu parce que pour nous c'est de l'hébreu"
+    art         "Groupe du Laocoon", "L'impression en 3D en version marbre et burin, c'est sévèrement burné"
+    science     "Machine d'Anticythère", "Mécanisation de la pensée et donc première prothèse de cerveau"
+    pensee      "Allégorie de la Caverne de Platon", "Les grecs se demandaient déjà : vivons nous dans une réalité virtuelle?"
+
+milestone "900-1500", "Les inventions du Moyen-Âge",
+    subtitle    "Il faudrait arrêter de prendre nos brillants ancêtres pour des bouseux"
+    art         "Psautier de Folchard (872-883)", "Art abstrait, fait main, sans Photoshop et sans touche ""Annuler"""
+    science     "Horloge astronomique de Lyon (1379)", "Plus de fonctions que l'Apple Watch. Plus solide aussi."
+    pensee      "Invention de l'imprimerie", "On peut enfin ""copier-coller"" et distribuer la pensée humaine"
+
+milestone "XVIIIe", "Le siècle des lumières auto-proclamées",
+    subtitle    "Quand on continue à évoluer comme avant, c'est la révolution!"
+    art         "Gravure de Benois-Louis Prévost (1772)", "À l'époque, pour ""copier-coller"" une image, il faut utiliser un graveur"
+    science     "Pascaline (1652)", "La toute première calculatrice ""de poche"" (et déjà sans fil)"
+    pensee      "Encyclopédie de Diderot et d'Alembert", "Le tout premier prototype de Google utilisait bien moins d'énergie"
+
+milestone "Début XIXe", "La première (r)évolution industrielle",
+    subtitle    "Réaliser en quelque minutes des erreurs qui prenaient des mois"
+    art         "Sacre de Napoléon (David, 1806)", "Les images au service du pouvoir, c'est pas une invention de BFMTV"
+    science     "Métier Jacquard (1801)", "Le premier système mécanique programmable servait à tricoter des pulls?"
+    pensee      "Frankenstein (1818)", "L'homme artificiel et la vie mécanique, ratés et dangereux dès l'origine"
+
+milestone "1834", "On invente enfin la programmation!",
+    subtitle    "Repousser sans cesse les limites de la paresse intellectuelle"
+    art         "Delacroix - La liberté guidant le peuple (1830)", "Un vent de liberté commence à souffler sur la peinture"
+    science     "Machine analytique de Babbage (1834)", "Le premier ordinateur numérique, si seulement on savait le fabriquer!"
+    pensee      "Roman de l'Avenir (Félix Bodin, 1834)", "À peu près aussi inexact que les prédictions d'Al Gore sur le climat"
+
+
+// ============================================================================
+section_slide "L'antiquité",
+// ============================================================================
+    title page_label
+    subtitle "Quand on pensait encore qu'un ordinateur ne se trompait jamais"
+    picture
+        texture "IBM 2401 Tapes.jpg"
+        translate 350, 230, 20
+        rotate_z -2
+        scale 70%
+        rounded_rectangle 0, 0, texture_width, texture_height, 20
+
+milestone "Avant guerre", "L'époque du presque",
+    subtitle    "L'invention d'un mode de pensée: ""ça marche presque"""
+    art         "Guernica (Picasso, 1937)", "La peinture cesse d'être une photographie plus lente et moins exacte"
+    science     "Zuse Z3 (1941)", "Heureusement, Hitler a jugé que ce machin bidule n'était pas stratégique"
+    // Programmable, relais, virgule flottante, 64x22 bits, 4 à 5 Hz, ""non stratégique"""
+    pensee      "Action Comics #1 - Superman (1938)", "La ""science"" des premiers super-héros inspire encore le cinéaste moderne"
+    memory      64 * 22 // 64 words of 22 bits
+    frequency   5.3, 1.25
+    power       4000, "1t", "50.000 RM"
+    notes       "Relais électromécaniques, invention de la virgule flottante"
+
+milestone "Après guerre", "Si vis pacem, para bellum",
+    subtitle    "Entre inquiétude et optimisme, entre folie et froide logique"
+    art         "Art Brut (Dubuffet, 1945)", "L'art des fous, production de personnes exemptes de culture artistique"
+    science     "ENIAC (1945)", "Calculons vite des tables ballistiques ou la faisabilité de l'arme nucléaire"
+    pensee      "Trois lois de la robotique (1942)", "Âge d'or, exploration spatiale, atomes, robots, mutants et inquiétudes"
+    memory      800 // 20 10-digit numbers
+    frequency   5000, 10000
+    power       170000, "28t", "$500.000 (6.3M$ 2019)"
+    notes       "Technologie à base de tubes à vide, premiers ""bugs"""
+
+milestone "1947-1948", "Le transistor",
+    subtitle    "La brique de base de tout le numérique moderne"
+    art         "Full Fathom Five (Jackson Pollock, 1947)", "La technique devient-elle la raison d'être de l'art?"
+    science     "Invention du transistor (1947)", "Toute la musique que j'aime: radio, Walkman, iPod, iPhone"
+    pensee      "1984 (George Orwell, 1948)", "La technologie au service du totalitarisme (Facebook et Google)"
+    movie_at_step 1, "music/Le Transistor.mp4",
+        movie_base_volume 60%
+
+milestone "1957", "La photographie numérique",
+    subtitle    "L'ordinateur apprend à voir et à dessiner, et il n'est pas le seul"
+    art         "Première peinture de Congo (1957)", "L'art n'est plus réservé aux êtres humains. De l'art, ou du cochon?"
+    science     "Première photo numérique (1957)", "Russel Kirsch prend la première photo numérique, oublie d'en faire un selfie"
+    pensee      "The Black Cloud (Fred Hoyle, 1957)", "Un astrophysicien athée imagine un grand dieu noir, gazeux et mélomane."
+    memory      176*176
+
+milestone "1961", "La musique numérique",
+    subtitle    "Une bonne révolution commence toujours par un gros massacre"
+    art         "L'homme qui marche (Giacometti, 1961)", "L'homme qui marche vers un marché de l'art qui marche (environ 5 IBM 7090)"
+    science     "IBM 7090 (1961)", "Le premier ordinateur à faire de la ""musique"". Les ingénieurs ont la foi!"
+    pensee      "Solaris (Stanislaw Lem, 1961)", "La seule réponse imaginable: une intelligence incompréhensible"
+    movie_at_step 1, "music/IBM 7090 - Music.m4v"
+    memory      32768*36 // 32K 36-bit words
+    frequency   458715, 229000
+    power       37000, "26t", "$2.9M (19M$ 2018)"
+
+milestone "1964", "L'art numérique",
+    subtitle    "Le massacre continue, dans la joie et la bonne humeur"
+    science     "Computer and Automation", "Un magazine décide de lancer un concours annuel d'art numérique"
+    art         "Premier Prix d'Art Numérique", "Voici le lauréat de ce tout premier concours d'art numérique"
+    pensee      "Docteur Folamour", "Où comment j'ai appris à ne plus m'en faire et à aimer la bombe"
+
+milestone "1969", "Jeter des bases pour 50 ans",
+    subtitle    "Le jubilé de l'art numérique, de l'OS de l'iPhone ou de l'IA tueuse"
+    art         "Groupe Art et Informatique de Vincennes (1969)", "Les artistes français commencent à s'intéresser à l'ordinateur"
+    science     "Développement du système Unix (1969)", "Une version jouet du système Multics, pour implémenter le jeu Space Travel"
+    pensee      "2001 A Space Odyssey (Kubrick, 1968)", "L'ordinateur meurtrier HAL, une vision de l'AI froide et désincarnée"
+    movie_at_step 5, "movies/HAL 9000.mp4##start-time=40",
+        picture
+            translate_z 80
+            scale 150%
+            rectangle 0, 85, texture_width, texture_height
+    memory      4096*36 // 4K 36-bit words
+    frequency   571428, 250000
+    power       3000, "500kg", "$72K ($575K 2019)"
+
+
+// ============================================================================
+section_slide "Le micro-ordinateur",
+// ============================================================================
+    title page_label
+    subtitle "L'ordinateur s'invite chez monsieur Tout-le-Monde"
+    picture
+        texture "Commodore-64.png"
+        translate 300, 230, 20
+        rotate_z 2
+        rounded_rectangle 0, 0, texture_width, texture_height, 20
+
+milestone "1971", "L'ordinateur entre dans nos vies",
+    subtitle    "Ce n'est plus un monstre distant et froid mais un truc sympa et proche"
+    art         "Premier réseau vidéotexte", "On peut diffuser du contenu numérique. OK, mais quel contenu?"
+    science     "Computer Space (Bushnell, 1971)", "Un ordinateur qui ne sert qu'à jouer!"
+    pensee      "Bonne Nouvelle du Vatican (Robert Silverberg, 1971)", "Sixte VII vient d'être élu pape. Le premier pape robot, et il vole!"
+    movie_at_step 1, "movies/ComputerSpace.mp4##start-time=10.0",
+        picture
+            translate_z 80
+            rectangle 0, 120, 140% * texture_width, 140% * texture_height
+            movie_base_volume 70%
+
+milestone "1973", "Le règne de l'inattendu",
+    subtitle    "Lorsqu'on est au bord d'une singularité, est-ce qu'on s'en rend compte?"
+    art         "Opposing Mirrors & Video Monitors (Dan Graham, 1974)", "Première installation interactive, proto-Skype, et pour regarder qui?"
+    science     "R2E Micral N (1973)", "Le premier micro-ordinateur a été conçu pour arroser les plantes!"
+    pensee      "Le Grand Secret (Barjavel, 1973)", "L'homme a toujours rêvé de l'immortalité. Mais si elle était contagieuse?"
+    memory      2*1024*8
+    frequency   500000, 125000
+    power       200, "5kg", "8500F"
+
+milestone "1974", "L'oeil était sur la bombe et regardait: 0/1",
+    subtitle    "L'artiste sublime l'image, l'ordinateur essaie de ne pas trop l'abîmer"
+    art         "Hyper Street (Meynard, 1974)", "L'hyperréalisme: impossible avec 512 pixels"
+    science     "Lenna (1973)", "Scan d'un modèle de Playboy, tronqué à 512 lignes faute de mémoire"
+    pensee      "Westworld (1973)", "Robots tueurs et premières images pixellisées dans un film"
+    memory      512*512*24
+    movie_at_step 3, "music/Meynard Hyperrealisme.mov", false
+    movie_at_step 5, "movies/WestWorld.mkv##start-time=60",
+        picture
+            translate_z 80
+            rectangle 0, 120, texture_width, texture_height
+
+milestone "1977", "Croquez des pommes",
+    subtitle    "Rendre abordables les choses les plus compliquées"
+    art         "Le Pixel Art", "L'état de l'art numérique quand les outils sont patience et longueur de temps"
+    science     "Apple ][ (1977)", "Jobs met dans une jolie boîte en plastique l'invention géniale de Woz"
+    pensee      "Star Wars - A New Hope", "R2D2 et Z6PO, robots sympathiques, froussards ou courageux. Prix Hugo!"
+    memory      16384*8
+    frequency   1.023e6, 1.023e6/2
+    power       38, "3kg", "$1298 ($5400 en 2019)"
+    movie_at_step 5, "movies/Star Wars.mp4",
+        picture
+            translate_z 80
+            rectangle 0, 120, 2.3*texture_width, 1.5*texture_height
+
+milestone "1978", "Le numérique s'humanise",
+    subtitle    "L'ordinateur et l'électronique envahissent tous les aspects de la vie"
+    art         "Jean-Michel Jarre - Équinoxe", "La musique électronique attire un million de personnes place de la Concorde"
+    science     "Texas Instruments Speak and Spell", "L'ordinateur apprend à parler et à communiquer avec les enfants... et les ET"
+    pensee      "Le Guide du Routard Galactique (Douglas Adams)", "Personalité humaine véritable de la compagnie cybernétique de Sirius"
+    movie_at_step 3, "movies/JarreConcorde.mp4##start-time=460",
+        picture
+            translate_z 80
+            rectangle 0, 120, 3.0*texture_width, 3.0*texture_height
+
+milestone "1981", "Un petit pas après l'autre...",
+    subtitle    "Chaque année apporte son lot d'innovations, ses étapes majeures"
+    art         "TRON", "Un film décrivant l'intérieur d'un ordinateur, dessiné par ordinateur"
+    science     "Sinclair ZX-81", "Petit à petit, on devient plus petit: moins de mémoire qu'un curseur de souris"
+    pensee      "Star Wars - The Empire Strikes Back", "Je suis ton père, le choc! Et deuxième prix Hugo pour Star Wars"
+    memory      1024*8
+    frequency   3.25e6, 3.25e6/4
+    power       3, "350g", "£69.95 (£250 en 2019)"
+
+milestone "1982", "Et la technologie avance très vite",
+    subtitle    "Par exemple, d'une année sur l'autre, on invente la couleur et le son"
+    art         "Time Man of the Year", "Time Magazine nomme l'ordinateur personnel ""Machine de l'Année"""
+    science     "Sinclair ZX Spectrum", "Couleur, son, 48K, une bombe multimédia. Troisième Sinclair en trois ans!"
+    pensee      "Blade Runner", "Quand le robot devient si parfait que le débusquer est un métier"
+    memory      48*1024*8
+    frequency   3.5e6, 3.5e6/4
+    power       3, "600g", "£125 (£350 en 2019)"
+
+milestone "1982", "Ne clignez pas des yeux!",
+    subtitle    "Chaque année? Non, chaque mois; chaque semaine..."
+    art         "Genesis Effect (ILM, 1982)", "Première animation en 3D complète pour le grand écran"
+    science     "Commodore 64", "Encore mieux que le Spectrum, 64K, sprites, synthé, 16M d'unités vendues"
+    pensee      "Fondation Foudroyée", "Pendant ce temps, Isaac Asimov s'intéresse au temps (très) long"
+    memory      64*1024*8
+    frequency   1.023e6, 1.023e6
+    power       8, "600g", "$595 ($1550 en 2019)"
+    movie_at_step 3, "movies/GenesisEffect.mp4##start-time=80",
+        picture
+            translate_z 80
+            rectangle 0, 120, 1.0*texture_width, 1.0*texture_height
+
+milestone "1984", "La nouvelle génération",
+    subtitle    "Imaginez que tous les deux ans, votre voiture devienne deux fois plus rapide..."
+    art         "The Adventures of André and Wally B.", "Le tout premier petit film d'animation de ce qui va devenir Pixar"
+    science     "Macintosh", "Steve Jobs fait le pari fou de remplacer l'Apple II"
+    pensee      "The Terminator", "Un robot qui pulvérise les trois lois de la robotique avec du gros calibre"
+    movie_at_step 1, "movies/Mac1984.mp4",
+        picture
+            translate_z 80
+            rectangle 0, 120, 1.0*texture_width, 1.0*texture_height
+            movie_base_volume 60%
+    movie_at_step 3, "movies/FirstPixarMovie.mp4",
+        picture
+            translate_z 80
+            rectangle 0, 120, 1.4*texture_width, 1.4*texture_height
+            movie_base_volume 80%
+    movie_at_step 5, "movies/Terminator.mp4##start-time=290",
+        picture
+            translate_z 80
+            rectangle 0, 120, 1.6*texture_width, 1.6*texture_height
+            movie_base_volume 80%
+
+milestone "1985", "La démocratisation continue",
+    subtitle    "Tous les deux ans, les voitures deviennent aussi deux fois moins chères"
+    art         "Digital Effects Demos (1985)", "Les animations 3D deviennent part du paysage, mais elles ont mal vieilli"
+    science     "Amiga et Atari ST", "Passer d'un kart à une Formule 1 pour le prix d'une brouette"
+    pensee      "D.A.R.Y.L", daryl_alternate
+    memory      512*1024*8
+    frequency   8e6, 2e6
+    power       15, "2kg", "$799"
+    movie_at_step 3, "movies/DigitalEffects.mp4",
+        picture
+            translate_z 80
+            rectangle 0, 120, 2.4*texture_width, 2.4*texture_height
+            movie_base_volume 40%
+    movie_at_step 5, "movies/D.A.R.Y.L.mp4##start-time=9",
+        picture
+            translate_z 80
+            rectangle 0, 120, 2.0*texture_width, 2.0*texture_height
+    daryl_mode -> 0
+    daryl_alternate -> daryl_message daryl_mode
+    daryl_message 0 -> "Data Analyzing Robot Youth Lifeform"
+    daryl_message 1 -> "Développement Adolescent Robotoïde Yttrium Laserisé"
+    daryl_message 2 -> "Dispositif Androide Robotisé Yotta-Logique (1 YB = 800 m3 de cartes SD)"
+    on "key:e", { daryl_mode := 0 }
+    on "key:f", { daryl_mode := 1 }
+    on "key:d", { daryl_mode := 2 }
+
+milestone "1986", "Beaucoup de fumée, pas encore de feu",
+    subtitle    "Le plus gros ordinateur du monde a la puissance d'un iPhone"
+    art         "Meynard et Bastianelli travaillent sur Cray 2", "Film Trakal, images de synthèse sur Cray 2. Pré-internet, introuvable..."
+    science     "Cray 2", "Le plus gros supercalculateur, un peu moins puissant que l'iPhone"
+    pensee      "Aliens & La Mouche (1986)", "La mode est à l'horreur et aux effets spéciaux à base de fumigènes"
+    movie_at_step 3, "music/Meynard Cray 2.mov", false
+    only_at 1,
+        picture
+            translate_z 90
+            locally
+                color "white", 50%
+                line_color "blue", 80%
+                line_width 3
+                rectangle 0, 120, 1600, 640
+            translate_y 400
+            comparison_title "", { red "Cray 2" }, { green "iPhone XS" }
+            comparison_si "Prix", 30e6, 900
+            comparison_k "Mémoire", 256*1024*1024*8, 4*1024*1024*1024
+            comparison_k "Stockage", 32*1024*1024*1024, 512*1024*1024*1024
+            comparison_si "Alimentation", 195000, 1
+            comparison_si "Ops/s", 1.9e9, 1.1e9
+            comparison_txt "Affichage", "Sans", "2.7Mpixels"
+            comparison_txt "Poids", "2495kg", "128g"
+            comparison_txt "Divers", "Refroidi", "GPS, Cameras"
+
+
+
+milestone "1990", "Du matériel au logiciel",
+    subtitle    "Deux fois plus de puissance deux fois moins cher. Pour faire quoi?"
+    art         "Adobe Photoshop 1.0.7", "À l'origine conçu pour afficher des images sur un écran noir et blanc"
+    science     "Alpha Waves", "Le premier jeu de plateforme en 3D... mais c'est pour une autre conférence"
+    pensee      "Total Recall", "Si on remplace ma mémoire, est-ce que je deviens quelqu'un d'autre?"
+    movie_at_step 1, "movies/AlphaWaves.mp4##start-time=48",
+        picture
+            translate_z 80
+            rectangle 0, 120, 2.2*texture_width, 2.2*texture_height
+            movie_base_volume 40%
+
+milestone "1995", "L'assistant personnel numérique",
+    subtitle    "L'informatique envahit nos poches et nous connecte au monde"
+    art         "Toy Story", "Le premier film d'animation fait entièrement sur ordinateur"
+    science     "Apple Newton et Motorola Marco", "Ce sera un flop, la reconnaissance d'écriture deviendra célèbre pour ses bugs"
+    pensee      "Virtuosity", "Un tueur parfait tiré d'un jeu virtuel envahit le monde réel et y évolue"
+    movie_at_step 5, "movies/Virtuosity - SID 6.7 Evolves.mp4",
+        picture
+            translate_z 80
+            rectangle 0, 120, 1.5*texture_width, 1.5*texture_height
+            movie_base_volume 60%
+
+milestone "1997", "L'encyclopédie numérique",
+    subtitle    "Un catalogue exhaustif du savoir humain, accessible à tous"
+    art         "Deep Blue bat Gary Kasparov", "Du jour au lendemain, les échecs ne sont plus un symbole d'intelligence"
+    science     "Google Server (1997)", "Voilà comment Google organize les données de toute la planète"
+    pensee      "Gattaca", "Si l'ADN est notre carte d'identité, peut on échapper à sa programmation?"
+
+milestone "1998", "L'ordinateur rejoint l'art",
+    subtitle    "La technologie n'est plus au centre du produit informatique"
+    art         "Unreal (Epic, 1998)", "Un nouveau moteur 3D sépare le moteur et le travail des artistes"
+    science     "Apple IMac (Bondi Blue)", "Apple bouscule l'idée qu'on se fait de l'ordinateur, en fait une oeuvre d'art"
+    pensee      "The Truman Show", "La vie de Truman n'est qu'un spectacle sans aucune réalité"
+    movie_at_step 1, "movies/Apple - Say Hello to iMac (1998).mp4",
+        picture
+            translate_z 80
+            rectangle 0, 120, 6.0*texture_width, 6.0*texture_height
+            movie_base_volume 60%
+
+milestone "2000", "Le millénaire numérique",
+    subtitle    "Nous entrons dans une nouvelle ère où tout est numérique"
+    art         "The Sims", "Un simulateur de vie numérique pour apprenti dieu"
+    science     "Bug de l'an 2000", "Il y a 30 ans, on pensait que les ordinateurs ne faisaient jamais d'erreur"
+    pensee      "Galaxy Quest", "Et si des extra-terrestres prenaient nos émissions TV au sérieux?"
+    movie_at_step 5, "movies/Galaxy Quest - Trailer.mp4",
+        picture
+            translate_z 80
+            rectangle 0, 120, 1.0*texture_width, 1.0*texture_height
+            movie_base_volume 70%
+
+milestone "2004", "Les réseaux sociaux",
+    subtitle    "Il est difficile de ce souvenir que ce concept ne voulait rien dire en 2000"
+    art         "Lux Aurumque (Eric Whitacre's Virtual Choir, 2009)", "Un choeur virtuel assemblé via Internet"
+    science     "Facebook", "DARPA arrête Lifelog le 4 février 2004. Facebook apparaît le même jour..."
+    pensee      "Personne n'avait prévu Facebook", "La science-fiction a prévu plein de choses, mais pas les réseaux sociaux"
+    movie_at_step 3, "movies/LuxAurumque.mp4##start-time=20",
+        picture
+            translate_z 80
+            rectangle 0, 120, 1.0*texture_width, 1.0*texture_height
+
+milestone "2007", "La fin de l'ordinateur",
+    subtitle    "La technologie s'est effacée parce qu'omniprésente"
+    art         "SIGGRAPH 2007", "L'ordinateur n'est plus qu'un moyen pour alimenter une recherche"
+    science     "Apple iPhone", "Musique, films, Internet, Contacts. Ce n'est plus un ordinateur, c'est votre vie"
+    pensee      "The Man From Earth", "Il dit au revoir à ses amis. Il n'a rien de spécial. À part l'immortalité."
+    movie_at_step 1, "movies/iPhone.mp4",
+        picture
+            translate_z 80
+            rectangle 0, 120, 1.5*texture_width, 1.5*texture_height
+    movie_at_step 3, "movies/SIGGRAPH 2007.mp4##start-time=17",
+        picture
+            translate_z 80
+            rectangle 0, 120, 5.0*texture_width, 5.0*texture_height
+
+// ============================================================================
+section_slide "Ils ont tracé la route",
+// ============================================================================
+    title page_label
+    subtitle "Dans l'homme numérique, il y a d'abord et avant tout l'homme"
+    picture
+        portraits "Steve Wozniak", "Ada Lovelace", "Ken Thompson", "Linus Torvalds", "Katherine Johnson", "George Boole", "John McCarthy", "Steve Jobs", "Alan Turing", "Frederick Raynal", "André Truong", "Grace Hopper", "Dennis Ritchie", "Jean-Marie Hullot", "Gérard Berry", "Richard Stallman", "Bill Gates", "Tim Berners-Lee", "John Carmack", "Charles Babbage", "Donald Knuth", "Niklaus Wirth", "Alan Kay", "Philippe Kahn", "Carl Sassenrath", "Clive Sinclair", "Jean-Michel Jarre", "Blaise Pascal"
+    stepping
+    movie_at_step 1, "movies/LuxAurumque.mp4##start-time=32",
+        movie_base_volume 70%
+
+portraits_position -> page_time
+portraits_count -> 1.0
+portraits_depth -> 2800
+portraits N:integer, Head, Tail ->
+    portraits N, Head
+    portraits N+1, Tail
+portraits N:integer, Head ->
+    locally
+        texture Head & ".jpg"
+        translate_z -portraits_depth
+        rotate_y 360.0/portraits_count * N - 5 * portraits_position
+        translate_z portraits_depth
+        translate_y 320 + 100 * sin(23.5 * N)
+        circle 0, 0, 300
+        text_box 0, -320, 500, 50,
+            style "story"
+            color "white"
+            texture ""
+            align 50%
+            vertical_align 50%
+            text Head
+
+        if N + 1 > portraits_count then
+            portraits_count := (portraits_count + N + 1) / 2
+portraits List -> portraits 0, List
